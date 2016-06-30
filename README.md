@@ -5,4 +5,4 @@
 Collection of Javascript Abstract Types
 
 ## Types
-* [List](./src/listadt.js) - an ordered sequence of data.
+* [List](./src/listadt.js) - an ordered sequence of data
