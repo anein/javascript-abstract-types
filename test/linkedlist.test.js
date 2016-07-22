@@ -1,7 +1,7 @@
 //
 import { expect } from 'chai';
 
-import { LinkedList, Node } from '../src/singlyLinkedlist';
+import { LinkedList, Node } from '../src/singlyLinkedList';
 
 //
 describe( 'LinkedList tests', () => {
@@ -107,7 +107,9 @@ describe( 'LinkedList tests', () => {
 
     it( 'findPrevious(): Is the previous node of "Dostoyevsky" - Pasternak ', () => {
 
-      expect( linkedList.findPrevious( 'Dostoyevsky' ).data ).to.equal( 'Pasternak' );
+      const node = linkedList.findPrevious( 'Dostoyevsky' );
+
+      expect( node.data ).to.equal( 'Pasternak' );
 
     } );
 

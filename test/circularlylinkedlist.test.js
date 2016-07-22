@@ -40,6 +40,28 @@ describe( 'Circularly Linked List Test', () => {
   } );
 
   //
+  describe( 'Creating Nodes', () => {
+
+    it( 'Create a node.', () => {
+
+      const node = new Node( 'Tom' );
+
+      expect( node.data ).to.be.equal( 'Tom' );
+
+    } );
+
+    it( 'Should create two linked nodes ', () => {
+
+      const node1 = new Node( 'Tom' );
+      const node2 = new Node( 'Jerry', node1 );
+
+      expect( node2.next ).to.be.equal( node1 );
+
+    } );
+
+  } );
+
+  //
   describe( 'Creating', () => {
 
     //
@@ -186,6 +208,16 @@ describe( 'Circularly Linked List Test', () => {
       list.remove( 'head' );
 
       expect( list.length() ).to.be.equal( 5 );
+
+    } );
+
+
+    //
+    it( 'remove() : Should remove the node - "Pooh"', () => {
+
+      list.remove( 'Pooh' );
+
+      expect( list.length() ).to.be.equal( 4 );
 
     } );
 

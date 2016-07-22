@@ -1,7 +1,7 @@
 //
 import { expect } from 'chai';
 
-import { DoublyLinkedList, Node } from '../src/doublyLinkedlist';
+import { DoublyLinkedList, Node } from '../src/doublyLinkedList';
 
 describe( 'DoublyLinkedList tests', () => {
 
