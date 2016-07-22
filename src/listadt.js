@@ -1,5 +1,5 @@
 /**
- * The definition of a list abstract data type.
+ * The definition of the list abstract data type.
  */
 class ListADT {
 
@@ -18,7 +18,7 @@ class ListADT {
   /**
    * Returns the length of elements in the list.
    *
-   * @return {number}
+   * @return {number} the length of elements
    */
   length() {
     return this.listSize;
@@ -48,6 +48,8 @@ class ListADT {
 
   /**
    * Returns string representation of list.
+   *
+   * @return {string} string representation
    */
   toString() {
     return this.dataStore;
@@ -63,10 +65,12 @@ class ListADT {
   }
 
   /**
-   * Inserts new element after exising element.
+   * Inserts new element after existing element.
    *
    * @param {(number|string)} elem - A new element in the list
-   * @param {(number|string)} [after=null] - The exising element in list.
+   * @param {(number|string)} [after=null] - The existing element in list.
+   *
+   * @return {boolean} the result of operation
    */
   insert( elem, after = null ) {
 
@@ -141,7 +145,7 @@ class ListADT {
    * @return {boolean} The result of the checking.
    */
   contains( elem ) {
-    return ( this.find( elem ) > -1 );
+    return (this.find( elem ) > -1);
   }
 
   /**
