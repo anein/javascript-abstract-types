@@ -61,17 +61,23 @@ export class CircularlyLinkedList {
    * Finds the node before the item.
    *
    * @param {string} data - a node data to find.
-   * @return {Node} returns the previous node or the head node.
+   * @return {(Node|null)} returns the previous node or the head node.
    */
   findPrevious( data ) {
 
     let currentNode = this.head;
 
-    while ( currentNode.next.data !== 'head' && currentNode.next.data !== data ) {
+    while ( currentNode.next.data !== 'head' ) {
+
+      if ( currentNode.next.data === data ) {
+        return currentNode;
+      }
+
       currentNode = currentNode.next;
     }
 
-    return (currentNode.next.data === data ) ? currentNode : null;
+    return null;
+
   }
 
   /**
@@ -101,7 +107,7 @@ export class CircularlyLinkedList {
 
     const previousNode = this.findPrevious( data );
 
-    if ( previousNode && data !== 'head') {
+    if ( previousNode && data !== 'head' ) {
 
       previousNode.next = previousNode.next.next;
 
