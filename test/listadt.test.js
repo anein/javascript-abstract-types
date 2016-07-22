@@ -14,8 +14,10 @@ describe( 'ListADT Tests', () => {
     });
 
     it( 'Created object should be instantiated of the ListADT type', () => {
+
       list = new ListADT();
       expect( list ).to.be.an.instanceof( ListADT );
+
     });
 
   });
@@ -67,7 +69,6 @@ describe( 'ListADT Tests', () => {
       expect( list.elements()[ 2 ] ).to.equal( 'Vlad' );
     });
 
-
     it( 'insert(): Insert a new element "Anton" to the end of the list.', () => {
       expect( list.insert( 'Anton' ) ).to.be.true;
     });
@@ -75,7 +76,6 @@ describe( 'ListADT Tests', () => {
     it( 'insert(): Should not insert a new element "Gleb" after a no-existing element.', () => {
       expect( list.insert( 'Gleb', 'Vova' ) ).to.be.false;
     });
-
 
   });
 
