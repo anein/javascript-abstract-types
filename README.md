@@ -8,4 +8,5 @@ Collection of Javascript Abstract Types
 * [Singly Linked List](./src/singlyLinkedList.js) - a collection of objects called nodes.
 * [Circularly Linked List](./src/circularlyLinkedList.js) - has its head node's next property point back to itself.
 * [Doubly Linked List](./src/doublyLinkedList.js) - a list that contains links to next and previous nodes.
-* [Stack](./src/stack.js) -  a list of elements that are accessible only from one end of the list.
+* [Stack](./src/stack.js) - a list of elements that are accessible only from one end of the list.
+* [Queue](./src/queue.js) - a type of list where data are inserted at the end and are removed from the front.
