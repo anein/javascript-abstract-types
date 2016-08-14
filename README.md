@@ -10,3 +10,4 @@ Collection of Javascript Abstract Types
 * [Doubly Linked List](./src/doublyLinkedList.js) - a list that contains links to next and previous nodes.
 * [Stack](./src/stack.js) - a list of elements that are accessible only from one end of the list.
 * [Queue](./src/queue.js) - a type of list where data are inserted at the end and are removed from the front.
+* [Dictionary](./src/dictionary.js) - a data structure that stores data as key-value paris.
