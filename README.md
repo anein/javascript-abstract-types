@@ -12,3 +12,4 @@ Collection of Javascript Abstract Types
 * [Queue](./src/queue.js) - a type of list where data are inserted at the end and are removed from the front.
 * [Dictionary](./src/dictionary.js) - a data structure that stores data as key-value paris.
 * [Hashtable](./src/hashtable.js) - a common technique for storing data in such a way that the data can be inserted and retrieved very quickly.
+* [Set](./src/set.js) - a collection of unique elements.
