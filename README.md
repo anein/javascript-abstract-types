@@ -13,3 +13,4 @@ Collection of Javascript Abstract Types
 * [Dictionary](./src/dictionary.js) - a data structure that stores data as key-value paris.
 * [Hashtable](./src/hashtable.js) - a common technique for storing data in such a way that the data can be inserted and retrieved very quickly.
 * [Set](./src/set.js) - a collection of unique elements.
+* [Binary Search Tree](./src/binarySearchTree.js) - a binary tree in which data with lesse values are stored in left nodes and data with greater values are stored in right nodes.
